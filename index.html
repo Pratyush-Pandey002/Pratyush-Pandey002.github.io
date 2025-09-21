@@ -35,6 +35,13 @@
             color: #4299e1;
             transform: translateY(-2px);
         }
+        .skill-badge {
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .skill-badge:hover {
+            transform: translateY(-2px) scale(1.05);
+            background-color: #4a5568;
+        }
         .section-header {
             border-bottom: 2px solid #4a5568;
             padding-bottom: 0.5rem;
@@ -94,7 +101,7 @@
             <h2 class="text-3xl font-bold section-header">Work Experience</h2>
             <div class="card">
                 <h3 class="text-xl font-semibold text-white">Assistant Manager | L2 Support Specialist | Core IT</h3>
-                <p class="text-sm text-gray-400 mt-1">FinTech NBFC Organization | August 2022 - Present</p>
+                <p class="text-sm text-gray-400 mt-1">L&T Financial Services | August 2022 - Present</p>
                 <div class="mt-4 text-gray-400 space-y-4">
                     <p>
                         With over 3 years of experience, I have managed support calls throughout the application journey, ensuring uninterrupted business flow. My key competencies include:
@@ -127,26 +134,25 @@
         <section id="skills" class="py-20">
             <h2 class="text-3xl font-bold section-header">Technical Toolkit & Expertise</h2>
             <div class="flex flex-wrap gap-3 mt-8">
-                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md">Salesforce</span>
-                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md">Dynatrace</span>
-                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md">SQL Server Management Studio</span>
-                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md">Workbench (REST, Apex, SOQL)</span>
-                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md">DevOps Deploy</span>
-                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md">ServiceDesk</span>
-                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md">JIRA</span>
-                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md">JFrog</span>
-                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md">Power BI</span>
-                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md">Github</span>
-                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md">Python</span>
-                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md">Excel</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">Salesforce</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">Dynatrace</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">SQL Server Management Studio</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">Workbench (REST, Apex, SOQL)</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">DevOps Deploy</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">ServiceDesk</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">JIRA</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">JFrog</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">Power BI</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">Github</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">Python</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">Excel</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">Java</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">HTML</span>
+                <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full shadow-md skill-badge">Javascript</span>
             </div>
             <div class="mt-8 card">
                 <h3 class="text-xl font-semibold text-white mb-4">Skill Proficiency (Sample Data)</h3>
                 <canvas id="skillChart"></canvas>
-                <p class="mt-4 text-sm text-gray-500">
-                    This bar chart represents a sample of my proficiency in various toolkits.
-                    You can update the percentages in the code to reflect your actual expertise.
-                </p>
             </div>
         </section>
 
@@ -154,18 +160,21 @@
         <section id="projects" class="py-20">
             <h2 class="text-3xl font-bold section-header">Key Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                <!-- Power BI Dashboard Project -->
-                <a href="https://app.powerbi.com/groups/me/dashboards/4fe191ae-b12f-4f12-9d7e-58ab33b130d8?ctid=7fb0d338-2530-463a-aa9e-fe23d40ff6ff&pbi_source=linkShare" target="_blank" class="card">
-                    <h3 class="text-xl font-semibold text-white">L2 Support Request Analysis</h3>
+                <!-- L2 Support Dashboard Project -->
+                <div class="card">
+                    <a href="https://pratyush-pandey002.github.io/L2_support_requests_dashboard.png" target="_blank">
+                        <img src="https://pratyush-pandey002.github.io/L2_support_requests_dashboard.png" alt="L2 Support Dashboard" class="w-full h-auto rounded-md shadow-md object-cover">
+                    </a>
+                    <h3 class="text-xl font-semibold text-white mt-4">L2 Support Request Analysis</h3>
                     <p class="text-gray-400 mt-2">
-                        A Power BI dashboard providing a comprehensive analysis of L2 support requests. Categorizes requests by type and location to drive data-driven insights and improve service efficiency.
+                        A power BI dashboard providing a comprehensive analysis of requests raised at L2. Categorizes requests by: type of request, closure category with resolution type as catalogue code and the stages of the application when request was raised, and finally count of requests raised from each branches and pan India map view showcasing data for past 3 months.
                     </p>
                     <div class="mt-4 flex flex-wrap items-center space-x-2">
                         <span class="bg-blue-600 text-white text-sm font-medium px-2.5 py-0.5 rounded-full">Power BI</span>
                         <span class="bg-blue-600 text-white text-sm font-medium px-2.5 py-0.5 rounded-full">Data Analysis</span>
                     </div>
-                </a>
-                
+                </div>
+
                 <!-- Python Weather Dashboard Project -->
                 <a href="https://github.com/Pratyush-Pandey002/python-weather-dashboard" target="_blank" class="card">
                     <h3 class="text-xl font-semibold text-white">Python Weather Dashboard</h3>
@@ -179,16 +188,19 @@
                 </a>
 
                 <!-- Loan Applications Dashboard Project -->
-                <a href="https://app.powerbi.com/groups/me/dashboards/61ad896f-493c-49a9-953e-06e244e8a460?ctid=7fb0d338-2530-463a-aa9e-fe23d40ff6ff&pbi_source=linkShare" target="_blank" class="card">
-                    <h3 class="text-xl font-semibold text-white">Loan Applications Dashboard</h3>
+                <div class="card">
+                    <a href="https://pratyush-pandey002.github.io/loan_applications_dashboard.png" target="_blank">
+                        <img src="https://pratyush-pandey002.github.io/loan_applications_dashboard.png" alt="Loan Applications Dashboard" class="w-full h-auto rounded-md shadow-md object-cover">
+                    </a>
+                    <h3 class="text-xl font-semibold text-white mt-4">Loan Applications Dashboard</h3>
                     <p class="text-gray-400 mt-2">
-                        A Power BI dashboard created to visualize and categorize loan applications by product type and location, providing insights for business and sales teams to optimize strategies.
+                        A power BI dashboard created to visualize and categorize loan applications availed in past 3 months by product type, sub product and branches from where the loan is offered. It also showcase the result in terms of loan amount, count of cases and last disbursed case from all branches, providing insights for business and sales teams to optimize strategies.
                     </p>
                     <div class="mt-4 flex flex-wrap items-center space-x-2">
                         <span class="bg-blue-600 text-white text-sm font-medium px-2.5 py-0.5 rounded-full">Power BI</span>
                         <span class="bg-blue-600 text-white text-sm font-medium px-2.5 py-0.5 rounded-full">Data Modeling</span>
                     </div>
-                </a>
+                </div>
             </div>
         </section>
 
@@ -222,30 +234,34 @@
         <section id="certificates" class="py-20">
             <h2 class="text-3xl font-bold section-header">Certifications</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-                <div class="card">
+                <a href="https://ude.my/UC-fbbe5480-df9d-48ad-a21b-2a74d5d59514" target="_blank" class="card">
                     <h3 class="text-xl font-semibold text-white">Salesforce Certified Administrator Training</h3>
                     <p class="text-gray-400 mt-2">Issued by: Udemy</p>
-                </div>
-                <div class="card">
+                </a>
+                <a href="https://ude.my/UC-9e9b9e95-0310-4437-bc4c-0f4f6c313a99" target="_blank" class="card">
                     <h3 class="text-xl font-semibold text-white">Jira for Beginners</h3>
                     <p class="text-gray-400 mt-2">Issued by: Udemy</p>
-                </div>
-                <div class="card">
+                </a>
+                <a href="https://ude.my/UC-4f8c6c07-134b-4fe5-95ab-7783dc7d1808" target="_blank" class="card">
                     <h3 class="text-xl font-semibold text-white">Become a Junior Java Software Developer</h3>
                     <p class="text-gray-400 mt-2">Issued by: Udemy</p>
-                </div>
-                <div class="card">
+                </a>
+                <a href="https://ude.my/UC-fd4a386c-579f-43df-b675-d003d27bfb30" target="_blank" class="card">
                     <h3 class="text-xl font-semibold text-white">HTML - Introduction to Web Development</h3>
                     <p class="text-gray-400 mt-2">Issued by: Udemy</p>
-                </div>
-                <div class="card">
+                </a>
+                <a href="https://ude.my/UC-7377d946-04d4-4571-b870-bba2f81f41dc" target="_blank" class="card">
                     <h3 class="text-xl font-semibold text-white">ES6 Javascript: The Complete Developer's Guide</h3>
                     <p class="text-gray-400 mt-2">Issued by: Udemy</p>
-                </div>
-                <div class="card">
+                </a>
+                <a href="https://ude.my/UC-a2771a3d-5a50-4667-8661-245d1188ab8d" target="_blank" class="card">
                     <h3 class="text-xl font-semibold text-white">Git & GitHub Crash Course</h3>
                     <p class="text-gray-400 mt-2">Issued by: Udemy</p>
-                </div>
+                </a>
+                <a href="https://ude.my/UC-e96a1ed1-c9b9-4539-8de3-37174ac9a139" target="_blank" class="card">
+                    <h3 class="text-xl font-semibold text-white">Learn Java Programming Crash Course</h3>
+                    <p class="text-gray-400 mt-2">Issued by: Udemy</p>
+                </a>
                 <div class="card">
                     <h3 class="text-xl font-semibold text-white">Machine Learning with AI</h3>
                     <p class="text-gray-400 mt-2">Issued by: Udemy</p>
@@ -281,10 +297,10 @@
         const skillChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['Workbench', 'Salesforce', 'ServiceDesk & JIRA', 'Power BI', 'Dynatrace', 'SQL', 'Python'],
+                labels: ['Workbench', 'Salesforce', 'ServiceDesk & JIRA', 'Power BI', 'Dynatrace', 'SQL', 'Python', 'Excel'],
                 datasets: [{
                     label: 'Proficiency',
-                    data: [95, 90, 80, 95, 70, 70, 70],
+                    data: [95, 90, 80, 95, 70, 70, 70, 75],
                     backgroundColor: [
                         'rgba(66, 153, 225, 0.8)',
                         'rgba(99, 102, 241, 0.8)',
@@ -292,7 +308,8 @@
                         'rgba(249, 115, 22, 0.8)',
                         'rgba(239, 68, 68, 0.8)',
                         'rgba(52, 211, 153, 0.8)',
-                        'rgba(255, 193, 7, 0.8)'
+                        'rgba(255, 193, 7, 0.8)',
+                        'rgba(147, 51, 234, 0.8)'
                     ],
                     borderColor: [
                         'rgba(66, 153, 225, 1)',
@@ -301,7 +318,8 @@
                         'rgba(249, 115, 22, 1)',
                         'rgba(239, 68, 68, 1)',
                         'rgba(52, 211, 153, 1)',
-                        'rgba(255, 193, 7, 1)'
+                        'rgba(255, 193, 7, 1)',
+                        'rgba(147, 51, 234, 1)'
                     ],
                     borderWidth: 1
                 }]
